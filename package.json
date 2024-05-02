@@ -1,0 +1,17 @@
+{
+  "name": "webdev-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site created using HTML, CSS &amp; JavaScript",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Nitin Rajput",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "tooltip": "^1.6.1"
+  }
+}

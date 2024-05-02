@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ///////////////////////////////Custom CSS////////////////////////////////////////////////////////////// */
+:root {
+  --dark-bg: #121212; /*Primary Background Colour*/
+  --secondary-bg: #2c2c2c; /*Use it for card backgrounds, sidebars, or modal backgrounds to create depth and layering on the primary dark background.*/
+  --accent-blue: #007bff; /*A vibrant blue that works well for highlighting active elements, buttons, and links. It stands out against the dark background and guides the user's focus.*/
+  --accent-green: #00a896; /*A soothing green, excellent for success messages, icons, or progress bars. It pairs beautifully with dark themes and electric blue.*/
+  --text-color: #e0e0e0; /*Provides excellent contrast against dark backgrounds, ensuring readability without being too harsh on the eyes.*/
+  --subtle-text: #b3b3b3; /*Ideal for less important texts, such as secondary information, captions, or descriptions, providing a hierarchy of information through color.*/
+  --highlight-color: #e63946; /*Ideal for less important texts, such as secondary information, captions, or descriptions, providing a hierarchy of information through color.*/
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+.button {
+  color: white;
+}
+.highlight-color {
+  color: var(--highlight-color);
+}
+
+.button {
+  background-color: var(--accent-blue);
+}
+a:hover,
+.button:hover {
+  color: var(--highlight-color);
+}
+
+.secondary-text {
+  color: var(--subtle-text);
+}
+
+.card-background {
+  background-color: var(--secondary-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navlinks a {
+  text-decoration: none;
+}
+
+.navcontainer {
+  min-width: 60%;
+}
+
+.resumebtn {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumebtn i {
+  margin-right: 5px;
+}
+
+.switch-theme {
+  cursor: pointer;
+}
+
+.switch-theme:hover {
+  color: var(--highlight-color);
+}
+
+#home {
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  /* border: 2px solid cadetblue; */
+}
+
+.main-img {
+  width: 60%;
+  border-radius: 100%;
+}
+
+#home h1 {
+  font-size: 2em;
+  margin-bottom: 0.6em;
+}
+
+#home h2 {
+  font-size: 5em;
+  margin-bottom: 0.2em;
+}
+
+#home p {
+  font-size: 1rem;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.main-content {
+  width: 60%;
+  /* border: 2px solid #007bff; */
+}
+
+.img-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid #b3b3b3; */
+}
+
+.profile {
+  margin-top: 2em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: start;
+}
+
+a[href="https://www.linkedin.com/in/nitin-rajput/"]
+{
+  margin-left: 1em;
+}
