@@ -256,7 +256,7 @@ html {
 }
 
 .main-content {
-  width: 60%;
+  width: 45%;
   /* border: 2px solid #007bff; */
 }
 
@@ -278,4 +278,97 @@ html {
 a[href="https://www.linkedin.com/in/nitin-rajput/"]
 {
   margin-left: 1em;
+}
+
+#skills {
+  margin-top: 4em;
+}
+
+#skills h2 {
+  font-size: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  color: var(--highlight-color);
+}
+
+.skills-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2em;
+}
+
+.skills-container svg {
+  width: 6rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  padding: 1em;
+}
+.flex-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.icon-p {
+  margin-top: 0.9em;
+  font-weight: 700;
+}
+
+#experiece {
+  margin-top: 4em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+#experiece h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: var(--highlight-color);
+}
+
+.exp-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-bottom: 2em;
+  /* background-color: var(--secondary-bg); */
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.exp-block:hover {
+  background-color: var(--secondary-bg);
+}
+
+.exp-content-block {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.exp-ul {
+  list-style-type: disc;
+  /* list-style-position: inside; */
+  text-align: left;
+  margin-top: 0.7em;
+}
+
+.exp-ul li {
+  margin-bottom: 0.7em;
+  line-height: 1.3;
+}
+
+.exp-header {
+  width: 15%;
 }
