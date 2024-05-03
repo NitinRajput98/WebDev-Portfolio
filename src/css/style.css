@@ -143,6 +143,23 @@ body {
   background-color: var(--dark-bg);
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
+  /* background style */
+  /* --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color); */
 }
 
 a,
@@ -371,4 +388,48 @@ a[href="https://www.linkedin.com/in/nitin-rajput/"]
 
 .exp-header {
   width: 15%;
+}
+
+/* Swiper css */
+.swiper {
+  width: 70%;
+  height: 70%;
+  height: 30rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*//////////////////////////////////////////////*/
+
+.project-container {
+  background-color: var(--secondary-bg);
+  width: 50%;
+  height: 20rem;
+  margin: 5em auto;
+  border-radius: 0.5em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-container img {
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5em;
+  object-fit: contain;
+}
+
+.project-container p {
+  text-align: center;
+  width: 55%;
 }

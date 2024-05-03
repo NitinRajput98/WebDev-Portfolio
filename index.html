@@ -18,9 +18,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
     <link rel="stylesheet" href="src/css/style.css" />
-    <script type="module" src="src/js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <script defer src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script defer type="module" src="src/js/script.js"></script>
     <title>Nitin Rajput - FrontEnd Developer</title>
   </head>
   <body>
@@ -31,7 +33,7 @@
       <div class="navcontainer">
         <ul class="navlinks">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experiece">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li>
             <a
@@ -86,9 +88,9 @@
       <!-- Associate Consultant -->
       <div class="exp-block">
         <div class="exp-header">
-          <p class="secondary-text">Jan 2024 - Present</p>
+          <p class="highlight-color">Jan 2024 - Present</p>
         </div>
-        <div class="exp-content-block">
+        <div class="exp-content-block highlight-color">
           <h3>Associate Consultant, Capgemini</h3>
           <ul class="exp-ul secondary-text">
             <li>
@@ -110,9 +112,9 @@
       <!-- Senior Analyst -->
       <div class="exp-block">
         <div class="exp-header">
-          <p class="secondary-text">Jan 2023 - Dec 2023</p>
+          <p class="highlight-color">Jan 2023 - Dec 2023</p>
         </div>
-        <div class="exp-content-block">
+        <div class="exp-content-block highlight-color">
           <h3>Senior Analyst, Capgemini</h3>
           <ul class="exp-ul secondary-text">
             <li>
@@ -140,9 +142,9 @@
       <!-- Analyst -->
       <div class="exp-block">
         <div class="exp-header">
-          <p class="secondary-text">July 2021 - Dec 2022</p>
+          <p class="highlight-color">July 2021 - Dec 2022</p>
         </div>
-        <div class="exp-content-block">
+        <div class="exp-content-block highlight-color">
           <h3>Analyst, Capgemini</h3>
           <ul class="exp-ul secondary-text">
             <li>
@@ -169,9 +171,9 @@
       <!-- Analyst/BI MS Azure Trainee -->
       <div class="exp-block">
         <div class="exp-header">
-          <p class="secondary-text">April 2021 - June 2021</p>
+          <p class="highlight-color">April 2021 - June 2021</p>
         </div>
-        <div class="exp-content-block">
+        <div class="exp-content-block highlight-color">
           <h3>Analyst/BI MS Azure Trainee, Capgemini</h3>
           <ul class="exp-ul secondary-text">
             <li>
@@ -995,6 +997,86 @@
 
           <p class="icon-p">Parcel</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-container">
+              <h2>Forkify</h2>
+              <img src="./src/img/project-images/cinemaquest.png" alt="" />
+              <p>
+                Get inspired by over a million recipes! Avoid food waste by
+                selecting your portions and getting the number of ingredients
+                you need for each recipe. Bookmark your favorite recipes and
+                much more.
+              </p>
+              <div>
+                <a href="https://cinemaquest.netlify.app/" target="_blank"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/NitinRajput98/CinemaQuest"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-container">
+              <h2>Forkify</h2>
+              <img src="./src/img/project-images/cinemaquest.png" alt="" />
+              <p>
+                Get inspired by over a million recipes! Avoid food waste by
+                selecting your portions and getting the number of ingredients
+                you need for each recipe. Bookmark your favorite recipes and
+                much more.
+              </p>
+              <div>
+                <a href="https://cinemaquest.netlify.app/" target="_blank"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/NitinRajput98/CinemaQuest"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-container">
+              <h2>Forkify</h2>
+              <img src="./src/img/project-images/cinemaquest.png" alt="" />
+              <p>
+                Get inspired by over a million recipes! Avoid food waste by
+                selecting your portions and getting the number of ingredients
+                you need for each recipe. Bookmark your favorite recipes and
+                much more.
+              </p>
+              <div>
+                <a href="https://cinemaquest.netlify.app/" target="_blank"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/NitinRajput98/CinemaQuest"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
   </body>
