@@ -139,6 +139,21 @@ table {
   --highlight-color: #e63946; /*Ideal for less important texts, such as secondary information, captions, or descriptions, providing a hierarchy of information through color.*/
 }
 
+[data-theme="light"] {
+  --dark-bg: white;
+  --highlight-color: #007bff;
+  --text-color: black;
+  --subtle-text: black;
+  --secondary-bg: #b3b3b3;
+}
+
+[data-theme="dark"] {
+  --dark-bg: #121212;
+  --highlight-color: #e63946;
+  --text-color: #e0e0e0;
+  --secondary-bg: #2c2c2c;
+}
+
 body {
   background-color: var(--dark-bg);
   color: var(--text-color);
@@ -172,6 +187,7 @@ main {
 a,
 .button {
   color: white;
+  cursor: pointer;
 }
 .highlight-color {
   color: var(--highlight-color);
@@ -214,8 +230,9 @@ html {
 }
 .navlinks {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  gap: 40;
 }
 
 .navlinks a {
@@ -358,7 +375,7 @@ html {
 }
 
 #experiece {
-  /* margin-top: 4em; */
+  /* margin-top: 9em; */
   margin-left: 6em;
   margin-right: 6em;
 }
@@ -620,4 +637,8 @@ footer i {
 .copyright {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.anchor-blur {
+  filter: blur(2px);
 }
