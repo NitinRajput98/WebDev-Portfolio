@@ -162,6 +162,12 @@ body {
     var(--dot-color); */
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 a,
 .button {
   color: white;
@@ -290,16 +296,21 @@ html {
   font-size: 1.5em;
   display: flex;
   justify-content: start;
+  align-items: center;
+  gap: 20;
 }
 
-a[href="https://www.linkedin.com/in/nitin-rajput/"]
-{
-  margin-left: 1em;
+.profile > a {
+  transition: transform 200ms;
 }
 
-#skills {
-  margin-top: 4em;
+.profile > a:hover {
+  transform: scale(1.4);
 }
+
+/* #skills { */
+/* margin-top: 4em; */
+/* } */
 
 #skills h2 {
   font-size: 3em;
@@ -341,7 +352,7 @@ a[href="https://www.linkedin.com/in/nitin-rajput/"]
 }
 
 #experiece {
-  margin-top: 4em;
+  /* margin-top: 4em; */
   margin-left: 6em;
   margin-right: 6em;
 }
@@ -392,9 +403,9 @@ a[href="https://www.linkedin.com/in/nitin-rajput/"]
 
 /* Swiper css */
 .swiper {
-  width: 70%;
-  height: 70%;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
+  /* height: 30rem; */
 }
 
 .swiper-slide {
@@ -404,32 +415,128 @@ a[href="https://www.linkedin.com/in/nitin-rajput/"]
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(
+    --highlight-color
+  ) !important; /* Change this to your desired color */
+}
+
+/* Customizing the pagination bullets */
+.swiper-pagination-bullet {
+  background-color: var(
+    --text-color
+  ) !important; /*Change this to your desired color for inactive bullets*/
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(
+    --highlight-color
+  ) !important; /* Change this to your desired color for the active bullet */
 }
 
 /*//////////////////////////////////////////////*/
 
 .project-container {
-  background-color: var(--secondary-bg);
-  width: 50%;
+  /* background-color: var(--secondary-bg); */
+  width: 80%;
   height: 20rem;
   margin: 5em auto;
   border-radius: 0.5em;
   padding: 1em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
-.project-container img {
-  width: 50%;
-  height: 50%;
+.project-img > img {
+  width: 100%;
+  /* height: 50%; */
   border-radius: 0.5em;
-  object-fit: contain;
+  object-fit: fill;
+  aspect-ratio: 16/11;
+  transition: transform 400ms;
+  cursor: pointer;
 }
 
-.project-container p {
-  text-align: center;
-  width: 55%;
+.project-img > img:hover {
+  transform: scale(1.01);
+}
+
+.project-img {
+  width: 60%;
+}
+
+.project-description p {
+  text-align: left;
+  /* width: 55%; */
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 40%;
+}
+
+.project-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20;
+}
+
+.project-button-container > a {
+  border: 2px solid var(--highlight-color);
+  padding: 0.3em 1em;
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: transform 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: baseline;
+  gap: 6;
+  border-radius: 1em;
+}
+
+.project-button-container > a:hover {
+  background-color: rgba(230, 57, 70, 0.2);
+  transform: scale(1.1);
+}
+
+.project-description > h2 {
+  color: var(--highlight-color);
+  font-weight: 500;
+}
+
+.project-button-container > svg {
+  color: var(--highlight-color);
+  width: 2px;
+}
+
+.live-app-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--highlight-color);
+}
+
+#projects {
+  /* margin-top: 4em; */
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+#projects > h2 {
+  font-size: 3rem;
+  margin-bottom: 0.4em;
+  color: var(--highlight-color);
+  font-weight: 500;
 }
