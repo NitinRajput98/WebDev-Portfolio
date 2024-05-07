@@ -140,11 +140,12 @@ table {
 }
 
 [data-theme="light"] {
-  --dark-bg: white;
+  --dark-bg: #ffffff;
   --highlight-color: #007bff;
   --text-color: black;
   --subtle-text: black;
   --secondary-bg: #b3b3b3;
+  --projects-section-hover-background: rgba(0, 123, 255, 0.2);
 }
 
 [data-theme="dark"] {
@@ -152,6 +153,7 @@ table {
   --highlight-color: #e63946;
   --text-color: #e0e0e0;
   --secondary-bg: #2c2c2c;
+  --projects-section-hover-background: rgba(230, 57, 70, 0.2);
 }
 
 body {
@@ -175,6 +177,7 @@ body {
       )
       center / var(--dot-space) var(--dot-space),
     var(--dot-color); */
+  transition: background-color 0.4s;
 }
 
 main {
@@ -293,6 +296,7 @@ html {
 #home h2 {
   font-size: 5em;
   margin-bottom: 0.2em;
+  font-weight: 500;
 }
 
 #home p {
@@ -325,6 +329,7 @@ html {
 
 .profile > a {
   transition: transform 200ms;
+  color: var(--text-color);
 }
 
 .profile > a:hover {
@@ -340,6 +345,7 @@ html {
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 1em;
+  font-weight: 500;
   color: var(--highlight-color);
 }
 
@@ -384,6 +390,7 @@ html {
   font-size: 3em;
   margin-bottom: 1em;
   color: var(--highlight-color);
+  font-weight: 500;
 }
 
 .exp-block {
@@ -548,8 +555,12 @@ html {
   border-radius: 1em;
 }
 
+.project-button-container > a > svg {
+  color: var(--highlight-color);
+}
+
 .project-button-container > a:hover {
-  background-color: rgba(230, 57, 70, 0.2);
+  background-color: var(--projects-section-hover-background);
   transform: scale(1.1);
 }
 
@@ -592,7 +603,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10;
+  gap: 30;
+  color: var(--subtle-text);
 }
 
 footer a {
@@ -611,9 +623,6 @@ footer a {
   gap: 30;
 }
 
-footer {
-  color: var(--subtle-text);
-}
 footer > p {
   font-size: 1.4rem;
   font-weight: 500;
@@ -641,4 +650,8 @@ footer i {
 
 .anchor-blur {
   filter: blur(2px);
+}
+
+.hidden {
+  display: none;
 }
