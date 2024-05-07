@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,7 +36,7 @@
     <title>Nitin Rajput - FrontEnd Developer</title>
   </head>
   <body>
-    <nav class="navbar card-background">
+    <nav class="navbar">
       <div>
         <img class="logo" src="src/img/NitinRajput-Logo.png" alt="" />
       </div>
@@ -58,8 +58,15 @@
         </ul>
       </div>
       <div class="switch-theme" data-theme-toggle>
-        <i class="fa-solid fa-circle-half-stroke switch hidden"></i>
-        <i class="fa-solid fa-sun"></i>
+        <!-- <i class="fa-solid fa-circle-half-stroke switch"></i>
+        <i class="fa-solid fa-sun"></i> -->
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </div>
+        </label>
       </div>
     </nav>
 
