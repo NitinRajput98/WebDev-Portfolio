@@ -146,6 +146,10 @@ table {
   --subtle-text: black;
   --secondary-bg: #b3b3b3;
   --projects-section-hover-background: rgba(0, 123, 255, 0.2);
+  --navbar-background: rgb(245, 245, 245);
+  --experience-background: rgb(245, 245, 245);
+  --skills-background: rgb(245, 245, 245);
+  --skills-icon-background: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -154,6 +158,10 @@ table {
   --text-color: #e0e0e0;
   --secondary-bg: #2c2c2c;
   --projects-section-hover-background: rgba(230, 57, 70, 0.2);
+  --navbar-background: #2c2c2c;
+  --experience-background: #2c2c2c;
+  --skills-background: var(--secondary-bg);
+  --skills-icon-background: #e0e0e0;
 }
 
 body {
@@ -359,7 +367,7 @@ html {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--secondary-bg);
+  background-color: var(--skills-background);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -369,7 +377,7 @@ html {
 
 .skills-container svg {
   width: 6rem;
-  background-color: var(--text-color);
+  background-color: var(--skills-icon-background);
   border-radius: 50%;
   padding: 1em;
 }
@@ -410,7 +418,7 @@ html {
 }
 
 .exp-block:hover {
-  background-color: var(--secondary-bg);
+  background-color: var(--experience-background);
 }
 
 .exp-content-block {
@@ -602,7 +610,7 @@ html {
 }
 
 footer {
-  background-color: var(--secondary-bg);
+  background-color: var(--navbar-background);
   padding: 20px;
   text-align: center;
   display: flex;
