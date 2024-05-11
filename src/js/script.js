@@ -22,6 +22,7 @@ const scrollToTopBtn = document.querySelector(".back-to-top");
 // const switchTheme = document.querySelector(".switch");
 const darkThemeIcon = document.querySelector(".fa-circle-half-stroke");
 const lightThemeIcon = document.querySelector(".fa-sun");
+const home = document.querySelector(".home");
 
 navLinks.addEventListener("mouseover", function (e) {
   if (e.target === navLinks) return;
@@ -43,7 +44,10 @@ navLinks.addEventListener("mouseout", function (e) {
 
 navLinks.addEventListener("click", function (e) {
   // e.preventDefault();
-  if (e.target.classList.contains("nav-item")) {
+  if (
+    e.target.classList.contains("nav-item") &&
+    !e.target.classList.contains("home")
+  ) {
     document
       .querySelector(e.target.getAttribute("href"))
       .scrollIntoView({ behavior: "smooth" });
@@ -51,6 +55,11 @@ navLinks.addEventListener("click", function (e) {
 });
 
 scrollToTopBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+home.addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });

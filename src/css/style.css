@@ -150,6 +150,7 @@ table {
   --experience-background: rgb(245, 245, 245);
   --skills-background: rgb(245, 245, 245);
   --skills-icon-background: #ffffff;
+  --scrollbar-hover-background: #1c74d2;
 }
 
 [data-theme="dark"] {
@@ -158,10 +159,11 @@ table {
   --text-color: #e0e0e0;
   --secondary-bg: #2c2c2c;
   --projects-section-hover-background: rgba(230, 57, 70, 0.2);
-  --navbar-background: #2c2c2c;
-  --experience-background: #2c2c2c;
-  --skills-background: var(--secondary-bg);
+  --navbar-background: #181818;
+  --experience-background: #181818;
+  --skills-background: #181818;
   --skills-icon-background: #e0e0e0;
+  --scrollbar-hover-background: #b23740;
 }
 
 body {
@@ -294,6 +296,7 @@ html {
   align-items: center;
   margin-left: 3em;
   margin-right: 3em;
+  margin-top: 14em;
   /* border: 2px solid cadetblue; */
 }
 
@@ -317,7 +320,7 @@ html {
   width: 90%;
   font-size: 1.2rem;
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .main-content {
@@ -398,6 +401,7 @@ html {
   /* margin-top: 9em; */
   margin-left: 6em;
   margin-right: 6em;
+  margin-top: 4em;
 }
 
 #experiece h2 {
@@ -419,6 +423,7 @@ html {
 
 .exp-block:hover {
   background-color: var(--experience-background);
+  /* border: 2px solid white; */
 }
 
 .exp-content-block {
@@ -757,4 +762,53 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.skills-container svg {
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.skills-container svg:hover {
+  background-color: var(--highlight-color);
+}
+
+.skills-container div {
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.skills-container div:hover {
+  transform: scale(1.1);
+}
+
+section {
+  z-index: 9;
+}
+
+footer {
+  z-index: 9;
+  position: relative;
+}
+/* //////////////////////////////////////////ScrollBar/////////////////////////////////////////////////////// */ /* 
+width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--highlight-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover-background);
 }
