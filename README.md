@@ -19,20 +19,20 @@ git clone https://github.com/NitinRajput98/WebDev-Portfolio.git
 ```
 
 
-3. **Install Dependencies:**
+2. **Install Dependencies:**
 ```bash
 cd WebDev-Portfolio
 npm install
 ```
 
 
-5. **Run Locally:**
+3. **Run Locally:**
 ```bash
 npm start
 ```
 
 
-7. **Build for Production:**
+4. **Build for Production:**
 ```bash
 npm run build
 ```
