@@ -21,8 +21,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/nitinrajputportfolio.git
-   cd nitinrajputportfolio
+   git clone https://github.com/NitinRajput98/WebDev-Portfolio.git
+   cd WebDev-Portfolio
    ```
 
 2. **Install dependencies**
@@ -34,7 +34,7 @@ To run this project locally, follow these steps:
 3. **Run the development server**
 
    ```bash
-   npm run dev
+   npm run start
    ```
 
    This will start the Parcel bundler and serve the project at `localhost:1234` by default.
