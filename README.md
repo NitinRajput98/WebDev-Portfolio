@@ -15,13 +15,14 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 1. **Clone the Repository:**
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/NitinRajput98/WebDev-Portfolio.git
 ```
 
 
 3. **Install Dependencies:**
 ```bash
-cd your-portfolio npm install
+cd WebDev-Portfolio
+npm install
 ```
 
 
