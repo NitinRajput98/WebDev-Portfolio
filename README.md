@@ -1,6 +1,7 @@
 # Nitin Rajput's Portfolio Website
 
-!Portfolio Screenshot
+https://github.com/NitinRajput98/WebDev-Portfolio/assets/60286959/f3414ab5-e193-4916-8b1c-3075e0e911d6
+
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences. Feel free to explore and get in touch with me.
 
