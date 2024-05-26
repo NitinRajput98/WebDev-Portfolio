@@ -282,16 +282,17 @@ html {
 
 .main-img {
   width: 25%;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
 #home h1 {
-  font-size: 2em;
-  margin-bottom: 0.6em;
+  font-size: 5em;
+  margin-bottom: 0.2em;
+  font-weight: 500;
 }
 
 #home h2 {
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 0.2em;
   font-weight: 500;
 }
@@ -854,7 +855,7 @@ width */
 
 /*//////////////////////////////////////////////// Media Queries //////////////////////////////////////////////////*/
 /* Extra small devices (phones, 320px and up) */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 550px) {
   /* Your CSS rules for extra small devices */
 
   /* Section: About/Home */
@@ -869,11 +870,14 @@ width */
     text-align: center;
   }
   #home h1 {
-    font-size: 2em;
-    font-weight: 400;
+    /* font-size: 2em;
+    font-weight: 400; */
+    font-size: 3em;
+    font-weight: 500;
   }
   #home h2 {
-    font-size: 3em;
+    font-size: 2.2em;
+    font-weight: 500;
   }
   #home p {
     width: 100%;
@@ -886,7 +890,7 @@ width */
     margin-top: 1em;
   }
   .main-img {
-    width: 50%;
+    width: 40%;
     margin-bottom: 1em;
   }
 
@@ -902,6 +906,7 @@ width */
   .exp-block {
     flex-direction: column;
     align-items: center;
+    background-color: var(--experience-background);
   }
   .exp-header {
     width: 100%;
@@ -978,5 +983,667 @@ width */
 
   .flex-row-direction {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 708px) {
+  /* Your CSS rules for extra small devices */
+
+  /* Section: About/Home */
+  main {
+    gap: 125px;
+  }
+  #home {
+    margin-top: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    flex-direction: column-reverse;
+  }
+  .main-content {
+    width: 100%;
+    text-align: center;
+  }
+  #home h1 {
+    /* font-size: 2em;
+    font-weight: 400; */
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #home h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .profile {
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+
+  /* Section: Experience */
+  #experiece {
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+  .exp-block {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--experience-background);
+  }
+  .exp-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+  .exp-content-block {
+    width: 100%;
+  }
+
+  .exp-content-block > h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .exp-ul {
+    text-align: justify;
+  }
+
+  /* Section: Skills */
+  #skills {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-container svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 8em auto 5em auto;
+  }
+  .project-description {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description p {
+    text-align: center;
+  }
+
+  /* .project-button-container > a {
+    padding: 0.2em 0.5em;
+  } */
+
+  .project-img {
+    width: 70%;
+  }
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+
+  .flex-row-direction {
+    flex-direction: row;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 708px) and (max-width: 768px) {
+  /* Your CSS rules for extra small devices */
+
+  /* Section: About/Home */
+  #home {
+    margin-top: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    flex-direction: column-reverse;
+  }
+  .main-content {
+    width: 100%;
+    text-align: center;
+  }
+  #home h1 {
+    /* font-size: 2em;
+    font-weight: 400; */
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #home h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .profile {
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+
+  /* Section: Experience */
+  #experiece {
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+  .exp-block {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--experience-background);
+  }
+  .exp-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+  .exp-content-block {
+    width: 100%;
+  }
+
+  .exp-content-block > h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .exp-ul {
+    text-align: justify;
+  }
+
+  /* Section: Skills */
+  #skills {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-container svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 8em auto 5em auto;
+  }
+  .project-description {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description p {
+    text-align: center;
+  }
+
+  /* .project-button-container > a {
+    padding: 0.2em 0.5em;
+  } */
+
+  .project-img {
+    width: 70%;
+  }
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+
+  .flex-row-direction {
+    flex-direction: row;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Section: Home/About */
+  #home {
+    margin-top: 13em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  #home h1 {
+    font-size: 3.2em;
+    font-weight: 500;
+  }
+
+  #home h2 {
+    font-size: 2.4em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 90%;
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .profile {
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 30%;
+  }
+
+  /* Section: Experience */
+  #experiece {
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+
+  .exp-block {
+    gap: 10px;
+  }
+
+  .exp-header {
+    width: auto;
+  }
+
+  .exp-content-block {
+    width: 65%;
+  }
+
+  /* Section: Skills */
+
+  #skills {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+  .skills-container {
+    width: 100%;
+  }
+  .skills-container svg {
+    height: 5em;
+    width: 5em;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    gap: 22px;
+    width: 85%;
+    padding: 0em;
+    margin: 3em auto;
+  }
+  .project-description {
+    width: 45%;
+    gap: 10px;
+  }
+  .project-description p {
+    width: 100%;
+  }
+  .project-button-container > a {
+    padding: 0.3em 0.5em;
+  }
+  .project-img {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280) {
+  /* Section: Home/About */
+  #home {
+    margin-top: 13em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .main-content {
+    width: 60%;
+  }
+
+  #home h1 {
+    font-size: 4em;
+    font-weight: 500;
+  }
+
+  #home h2 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 100%;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .profile {
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 20%;
+  }
+  /* Section: Experience */
+  #experiece {
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+
+  .exp-block {
+    width: 100%;
+  }
+
+  .exp-header {
+    width: auto;
+  }
+
+  .exp-content-block {
+    width: 65%;
+  }
+
+  /* Section: Skills */
+
+  #skills {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+  .skills-container {
+    width: 100%;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    width: 80%;
+  }
+  .project-description {
+    width: 45%;
+    gap: 10px;
+  }
+  .project-description p {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1280) and (max-width: 1920) {
+  /* Section: Home/About */
+  main {
+    gap: 130px;
+  }
+  #home {
+    margin-top: 15em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .main-content {
+    width: 50%;
+  }
+
+  #home h1 {
+    font-size: 4em;
+    font-weight: 500;
+  }
+
+  #home h2 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 100%;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .profile {
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 20%;
+  }
+  /* Section: Experience */
+  #experiece {
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+
+  .exp-block {
+    width: 90%;
+    margin: 2em auto 2em auto;
+  }
+
+  .exp-header {
+    width: auto;
+  }
+
+  .exp-content-block {
+    width: 65%;
+  }
+
+  /* Section: Skills */
+
+  #skills {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+  .skills-container {
+    width: 70%;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    width: 80%;
+  }
+  .project-description {
+    width: 45%;
+    gap: 10px;
+  }
+  .project-description p {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1920) {
+  .navlinks a {
+    font-size: 2em;
+  }
+  #home {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  #home p {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+  .profile {
+    font-size: 2em;
+  }
+  #experiece {
+    margin-left: 13em;
+    margin-right: 13em;
+  }
+  #experiece h2 {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .exp-ul li {
+    font-size: x-large;
+  }
+  .exp-content-block > h3,
+  .experience-date {
+    font-size: 1.5rem;
+  }
+  .exp-header {
+    width: 20%;
+  }
+
+  #skills {
+    margin-left: 13em;
+    margin-right: 13em;
+  }
+
+  #skills h2 {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .skills-container {
+    width: 90%;
+  }
+
+  .skills-container svg {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .icon-p {
+    font-size: x-large;
+  }
+
+  #projects {
+    margin-left: 13em;
+    margin-right: 13em;
+  }
+
+  #projects > h2 {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .project-container {
+    margin: 15em auto 15em auto;
+  }
+
+  .project-description > h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-description p {
+    font-size: 1.8rem;
+  }
+  .project-button-container > a {
+    font-size: 1.5rem;
+  }
+  footer > p {
+    font-size: 2.4rem;
+  }
+
+  footer a {
+    font-size: 1.7rem;
+  }
+  .copyright {
+    font-size: 1.4rem;
   }
 }
