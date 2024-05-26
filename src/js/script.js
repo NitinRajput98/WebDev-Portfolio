@@ -140,7 +140,6 @@ document.addEventListener("click", (event) => {
     //  &&
     // !dropdownMenu.contains(event.target)
   ) {
-    console.log("in Condition");
     dropdownMenu.style.display = "none";
   }
 });
