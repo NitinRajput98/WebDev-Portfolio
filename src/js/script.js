@@ -23,6 +23,8 @@ const scrollToTopBtn = document.querySelector(".back-to-top");
 const darkThemeIcon = document.querySelector(".fa-circle-half-stroke");
 const lightThemeIcon = document.querySelector(".fa-sun");
 const home = document.querySelector(".home");
+const experienceBtn = document.querySelector(".experiece");
+const skillsBtn = document.querySelector(".skills");
 
 navLinks.addEventListener("mouseover", function (e) {
   if (e.target === navLinks) return;
@@ -43,7 +45,12 @@ navLinks.addEventListener("mouseout", function (e) {
 });
 
 navLinks.addEventListener("click", function (e) {
-  // e.preventDefault();
+  if (
+    e.target.href ===
+    "https://drive.google.com/file/d/1RQNNcBXkhN_FSt3D9m5decfT3Tf8Ubaj/view?usp=sharing"
+  )
+    return;
+  e.preventDefault();
   if (
     e.target.classList.contains("nav-item") &&
     !e.target.classList.contains("home")
@@ -64,11 +71,24 @@ home.addEventListener("click", function (e) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+experienceBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document
+    .querySelector(e.target.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+skillsBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document
+    .querySelector(e.target.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
+});
+
 ///////////////////////////////////////////////////////////Change Theme///////////////////////////////////////////////////////////////
 const toggleBtn = document.getElementById("checkbox");
 
 toggleBtn.addEventListener("change", function (e) {
-  console.log(this.checked);
   if (this.checked) {
     document.querySelector("html").setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
@@ -98,3 +118,26 @@ window.onload = function () {
     localStorage.setItem("theme", "dark");
   }
 };
+
+/////////////////////////////////////Hamburger Menu Functionality ///////////////////////////////////////////////////////
+
+const hamburger = document.getElementById("hamburger");
+const dropdownMenu = document.getElementById("dropdownMenu");
+
+hamburger.addEventListener("click", () => {
+  if (dropdownMenu.style.display === "flex") {
+    dropdownMenu.style.display = "none";
+  } else {
+    dropdownMenu.style.display = "flex";
+  }
+});
+
+// Optional: Close dropdown if clicked outside
+document.addEventListener("click", (event) => {
+  if (
+    !hamburger.contains(event.target) &&
+    !dropdownMenu.contains(event.target)
+  ) {
+    dropdownMenu.style.display = "none";
+  }
+});

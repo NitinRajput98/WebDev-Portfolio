@@ -243,26 +243,6 @@ html {
   width: 48px;
   height: 48px;
 }
-.navlinks {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 40;
-}
-
-.navlinks a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: var(--text-color);
-}
-
-.navlinks a:hover {
-  color: var(--highlight-color);
-}
-.navcontainer {
-  min-width: 60%;
-}
 
 .resumebtn {
   cursor: pointer;
@@ -301,8 +281,8 @@ html {
 }
 
 .main-img {
-  width: 60%;
-  border-radius: 100%;
+  width: 25%;
+  border-radius: 10%;
 }
 
 #home h1 {
@@ -325,14 +305,6 @@ html {
 
 .main-content {
   width: 45%;
-}
-
-.img-container {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 2px solid #b3b3b3; */
 }
 
 .profile {
@@ -811,4 +783,66 @@ width */
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-hover-background);
+}
+
+/* ////////////////////////////////Hamburger Menu///////////////////////////////////////////////////////// */
+
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40;
+  min-width: 60%;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+.navlinks a:hover {
+  color: var(--highlight-color);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  width: 200px;
+  z-index: 1;
+}
+
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dropdown a:hover {
+  background-color: #575757;
+  color: var(--highlight-color);
+}
+
+/* Styles for the hamburger menu at the breakpoint */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navlinks {
+    display: none;
+  }
 }

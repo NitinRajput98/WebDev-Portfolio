@@ -54,23 +54,27 @@
       <div>
         <img class="logo" src="src/img/NitinRajput-Logo.png" alt="" />
       </div>
-      <div class="navcontainer">
-        <ul class="navlinks">
-          <li>
-            <a class="nav-item home" href="#home">About</a>
-          </li>
-          <li><a class="nav-item" href="#experiece">Experience</a></li>
-          <li><a class="nav-item" href="#skills">Skills</a></li>
-          <li><a class="nav-item" href="#projects">Projects</a></li>
-          <li>
-            <a
-              class="nav-item"
-              href="https://drive.google.com/file/d/1RQNNcBXkhN_FSt3D9m5decfT3Tf8Ubaj/view?usp=sharing"
-              target="_blank"
-              >View Resume</a
-            >
-          </li>
-        </ul>
+      <ul class="navlinks">
+        <li>
+          <a class="nav-item home" href="#home">About</a>
+        </li>
+        <li><a class="nav-item" href="#experiece">Experience</a></li>
+        <li><a class="nav-item" href="#skills">Skills</a></li>
+        <li><a class="nav-item" href="#projects">Projects</a></li>
+        <li>
+          <a
+            class="nav-item"
+            href="https://drive.google.com/file/d/1RQNNcBXkhN_FSt3D9m5decfT3Tf8Ubaj/view?usp=sharing"
+            target="_blank"
+            >View Resume</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown" id="dropdownMenu">
+        <a href="#home">About</a>
+        <a href="#experiece">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
       </div>
       <div class="switch-theme" data-theme-toggle>
         <!-- <i class="fa-solid fa-circle-half-stroke switch"></i>
@@ -83,6 +87,7 @@
           </div>
         </label>
       </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
     </nav>
 
     <main>
@@ -91,7 +96,7 @@
       <!-- home section -->
       <section id="home">
         <div class="main-content">
-          <!-- <h1 class="highlight-color">Hi, my name is</h1> -->
+          <h1 class="highlight-color">Hi, my name is</h1>
           <h2 class="highlight-color">Nitin Rajput</h2>
           <p>
             Experienced dynamic professional adept in full-stack web development
@@ -119,9 +124,7 @@
             ></a>
           </div>
         </div>
-        <div class="img-container">
-          <img class="main-img" src="src/img/MainImg.png" alt="" />
-        </div>
+        <img class="main-img" src="src/img/MainImg.png" alt="" />
       </section>
 
       <!-- Experience section -->
@@ -1236,8 +1239,12 @@
         <a href="#home" class="back-to-top">
           <i class="fa-solid fa-house"></i> About</a
         >
-        <a href="#experiece"><i class="fa-solid fa-user-tie"></i> Experiece</a>
-        <a href="#skills"><i class="fa-solid fa-terminal"></i> Skills</a>
+        <a class="experiece" href="#experiece"
+          ><i class="fa-solid fa-user-tie"></i> Experiece</a
+        >
+        <a class="skills" href="#skills"
+          ><i class="fa-solid fa-terminal"></i> Skills</a
+        >
       </div>
       <div class="copyright">
         <p>&copy; 2024 Nitin Rajput. All rights reserved.</p>
