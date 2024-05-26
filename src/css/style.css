@@ -233,7 +233,7 @@ html {
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   background: transparent;
   backdrop-filter: blur(3px);
@@ -317,13 +317,18 @@ html {
 }
 
 .profile > a {
-  transition: transform 200ms;
+  transition: all 200ms;
   color: var(--text-color);
 }
 
 .profile > a:hover {
   transform: scale(1.4);
+  color: var(--highlight-color);
 }
+
+/* .profile > a > i:hover {
+  color: var(--highlight-color) !important;
+} */
 
 /* #skills { */
 /* margin-top: 4em; */
@@ -844,5 +849,134 @@ width */
 
   .navlinks {
     display: none;
+  }
+}
+
+/*//////////////////////////////////////////////// Media Queries //////////////////////////////////////////////////*/
+/* Extra small devices (phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Your CSS rules for extra small devices */
+
+  /* Section: About/Home */
+  #home {
+    margin-top: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    flex-direction: column-reverse;
+  }
+  .main-content {
+    width: 100%;
+    text-align: center;
+  }
+  #home h1 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  #home h2 {
+    font-size: 3em;
+  }
+  #home p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .profile {
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 50%;
+    margin-bottom: 1em;
+  }
+
+  /* Section: Experience */
+  #experiece {
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+  .exp-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .exp-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+  .exp-content-block {
+    width: 100%;
+  }
+
+  .exp-content-block > h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .exp-ul {
+    text-align: justify;
+  }
+
+  /* Section: Skills */
+  #skills {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-container svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 8em auto 5em auto;
+  }
+  .project-description {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description p {
+    text-align: center;
+  }
+
+  .project-button-container > a {
+    padding: 0.2em 0.5em;
+  }
+
+  .project-img {
+    width: 70%;
+  }
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+
+  .flex-row-direction {
+    flex-direction: column;
   }
 }

@@ -132,12 +132,15 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-// Optional: Close dropdown if clicked outside
+//Close dropdown if clicked outside
 document.addEventListener("click", (event) => {
+  if (dropdownMenu.style.display === "none") return;
   if (
-    !hamburger.contains(event.target) &&
-    !dropdownMenu.contains(event.target)
+    !hamburger.contains(event.target)
+    //  &&
+    // !dropdownMenu.contains(event.target)
   ) {
+    console.log("in Condition");
     dropdownMenu.style.display = "none";
   }
 });
