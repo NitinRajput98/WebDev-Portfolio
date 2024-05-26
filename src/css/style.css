@@ -640,6 +640,10 @@ footer i {
   color: var(--highlight-color);
 }
 
+footer svg {
+  color: var(--highlight-color);
+}
+
 .copyright {
   font-size: 1rem;
   font-weight: 400;
@@ -768,6 +772,12 @@ footer {
   z-index: 9;
   position: relative;
 }
+.display-flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
 /* //////////////////////////////////////////ScrollBar/////////////////////////////////////////////////////// */ /* 
 width */
 ::-webkit-scrollbar {
@@ -824,17 +834,20 @@ width */
   position: absolute;
   top: 60px;
   right: 10px;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: var(--dark-bg);
   border: 1px solid #444;
   width: 200px;
   z-index: 1;
 }
 
 .dropdown a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   padding: 1rem;
   text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid #444;
 }
 
 .dropdown a:hover {
@@ -1124,7 +1137,6 @@ width */
     font-weight: 500;
   }
 }
-
 @media (min-width: 708px) and (max-width: 768px) {
   /* Your CSS rules for extra small devices */
 
@@ -1259,7 +1271,7 @@ width */
     font-size: 1rem;
   }
 }
-
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Section: Home/About */
   #home {
@@ -1363,7 +1375,7 @@ width */
     width: 55%;
   }
 }
-
+/* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) and (max-width: 1280) {
   /* Section: Home/About */
   #home {
@@ -1456,7 +1468,7 @@ width */
     width: 55%;
   }
 }
-
+/* Extra large devices (large desktops, 1280px and up) */
 @media (min-width: 1280) and (max-width: 1920) {
   /* Section: Home/About */
   main {
@@ -1553,7 +1565,7 @@ width */
     width: 55%;
   }
 }
-
+/* Very large devices (extra large desktops, 1920px and up) */
 @media (min-width: 1920) {
   .navlinks a {
     font-size: 2em;
