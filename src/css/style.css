@@ -187,7 +187,7 @@ body {
       )
       center / var(--dot-space) var(--dot-space),
     var(--dot-color); */
-  transition: background-color 0.4s;
+  transition: background-color 0.4s ease-in-out;
 }
 
 main {
@@ -237,6 +237,7 @@ html {
   z-index: 10;
   background: transparent;
   backdrop-filter: blur(3px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .logo {
@@ -277,6 +278,7 @@ html {
   margin-left: 3em;
   margin-right: 3em;
   margin-top: 14em;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   /* border: 2px solid cadetblue; */
 }
 
@@ -1788,4 +1790,23 @@ width */
   .copyright {
     font-size: 1.4rem;
   }
+}
+
+.section {
+  /* border-top: 1px solid #ddd; */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+.section--about {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.navbar--hidden {
+  opacity: 0;
+  transform: translateY(1rem);
 }
