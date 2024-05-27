@@ -25,6 +25,7 @@ const lightThemeIcon = document.querySelector(".fa-sun");
 const home = document.querySelector(".home");
 const experienceBtn = document.querySelector(".experiece");
 const skillsBtn = document.querySelector(".skills");
+const projectsBtn = document.querySelector(".projects");
 
 navLinks.addEventListener("mouseover", function (e) {
   if (e.target === navLinks) return;
@@ -79,6 +80,13 @@ experienceBtn.addEventListener("click", function (e) {
 });
 
 skillsBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document
+    .querySelector(e.target.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+projectsBtn.addEventListener("click", function (e) {
   e.preventDefault();
   document
     .querySelector(e.target.getAttribute("href"))
@@ -166,9 +174,19 @@ allSections.forEach(function (section) {
   section.classList.add("section--hidden");
 });
 
+// Function handling animation for navbar and about section when dom content is loaded
 const navBar = document.querySelector(".navbar");
 const sectionAbout = document.querySelector("#home");
 window.addEventListener("DOMContentLoaded", function (e) {
   navBar.classList.remove("navbar--hidden");
   sectionAbout.classList.remove("section--about");
+});
+
+// Function handling section navigation for dropdown
+dropdownMenu.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (!e.target.classList.contains("display-flex-row")) return;
+  document
+    .querySelector(e.target.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
 });
