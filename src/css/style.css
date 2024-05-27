@@ -1000,12 +1000,143 @@ width */
   }
 }
 /* Extra small devices (phones, 320px and up) */
-@media (min-width: 320px) and (max-width: 550px) {
+@media (min-width: 320px) and (max-width: 480px) {
   /* Your CSS rules for extra small devices */
 
   /* Section: About/Home */
   #home {
-    margin-top: 5em;
+    margin-top: 7em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    flex-direction: column-reverse;
+  }
+  .main-content {
+    width: 100%;
+    text-align: center;
+  }
+  #home h1 {
+    /* font-size: 2em;
+    font-weight: 400; */
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #home h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+  #home p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .profile {
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .main-img {
+    width: 40%;
+    margin-bottom: 1em;
+  }
+
+  /* Section: Experience */
+  #experiece {
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #experiece h2 {
+    text-align: center;
+  }
+  .exp-block {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--experience-background);
+  }
+  .exp-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+  .exp-content-block {
+    width: 100%;
+  }
+
+  .exp-content-block > h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .exp-ul {
+    text-align: justify;
+  }
+
+  /* Section: Skills */
+  #skills {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-container svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Section: Projects */
+  #projects {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #projects > h2 {
+    text-align: center;
+  }
+  .project-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 8em auto 5em auto;
+  }
+  .project-description {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description p {
+    text-align: center;
+  }
+
+  .project-button-container > a {
+    padding: 0.2em 0.5em;
+  }
+
+  .project-img {
+    width: 70%;
+  }
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+
+  .flex-row-direction {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 550px) {
+  /* Your CSS rules for extra small devices */
+
+  /* Section: About/Home */
+  #home {
+    margin-top: 7em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     flex-direction: column-reverse;
@@ -1139,7 +1270,7 @@ width */
     gap: 125px;
   }
   #home {
-    margin-top: 5em;
+    margin-top: 7em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     flex-direction: column-reverse;
@@ -1274,7 +1405,7 @@ width */
 
   /* Section: About/Home */
   #home {
-    margin-top: 5em;
+    margin-top: 7em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     flex-direction: column-reverse;
