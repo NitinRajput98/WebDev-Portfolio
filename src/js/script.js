@@ -48,7 +48,7 @@ navLinks.addEventListener("mouseout", function (e) {
 navLinks.addEventListener("click", function (e) {
   if (
     e.target.href ===
-    "https://drive.google.com/file/d/1RQNNcBXkhN_FSt3D9m5decfT3Tf8Ubaj/view?usp=sharing"
+    "https://drive.google.com/file/d/1QYrt1X5bPObzbjGE0RmhJ23KBZ-cTgo0/view?usp=sharing"
   )
     return;
   e.preventDefault();
@@ -184,6 +184,7 @@ window.addEventListener("DOMContentLoaded", function (e) {
 
 // Function handling section navigation for dropdown
 dropdownMenu.addEventListener("click", function (e) {
+  if (e.target.classList.contains("nav-item")) return;
   e.preventDefault();
   if (!e.target.classList.contains("display-flex-row")) return;
   document
