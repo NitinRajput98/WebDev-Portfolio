@@ -48,7 +48,7 @@ navLinks.addEventListener("mouseout", function (e) {
 navLinks.addEventListener("click", function (e) {
   if (
     e.target.href ===
-    "https://drive.google.com/file/d/1QYrt1X5bPObzbjGE0RmhJ23KBZ-cTgo0/view?usp=sharing"
+    "https://drive.google.com/file/d/1WpgHzwK5O-3lJMzqT5QD7EGuXReGk5Jq/view?usp=sharing"
   )
     return;
   e.preventDefault();
